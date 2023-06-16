@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav a {
+  color: #1295d6;
+  border-right: 2px solid black;
+  padding-right: 10px;
+}
+
+.nav a:last-child {
+  border: unset;
+}
