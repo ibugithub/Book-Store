@@ -8,10 +8,6 @@ const Navbar = () => (
       <li>Bookstore CMS</li>
       <li><Link to="/">Books</Link></li>
       <li><Link to="/Catagories">Catagories</Link></li>
-      <li>
-        <Link to="/user">Auth </Link>
-      </li>
-
     </ul>
   </nav>
 );
