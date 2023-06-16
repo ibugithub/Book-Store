@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> Math Magician | README </h1>
+  <h1> Book Store | README </h1>
   <br/>
 </div>
 
@@ -24,8 +24,8 @@
 - [📝 License](#license)
 
 
-# Math Magician  <a name="about-project"></a>
-**Math Magician** is a project the 1st project of the 3rd modules. I have implemented the knowledge of react to ceate this project.
+# Book Store  <a name="about-project"></a>
+**Book Store** is a project the 1st project of the 3rd modules. I have implemented the knowledge of react to ceate this project.
 
 ## 🛠 Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
@@ -60,7 +60,8 @@ Example commands:
   
   ```
     cd my-folder 
-    git clone https://github.com/ibugithub/math-Magician
+    git clone https://github.com/ibugithub/Book-Store
+    cd Book-Store
   ```
 
 
@@ -98,8 +99,7 @@ You can deploy this project using:
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **[Beautiful Ui Structure]**
-- [ ] **[Fully functional calculator]**
+- [ ] **[Ui Structure by react]**
 - [ ] **[Interactive website]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
