@@ -4,12 +4,15 @@ import styles from '../css/Navbar.module.css';
 
 const Navbar = () => (
   <nav className={styles.navbar}>
-    <h1>Math Magician</h1>
+    <ul className={styles.nav}>
+      <li>Bookstore CMS</li>
+      <li><Link to="/">Books</Link></li>
+      <li><Link to="/Catagories">Catagories</Link></li>
+      <li>
+        <Link to="/user">Auth </Link>
+      </li>
 
-    <div className={styles.nav}>
-      <Link to="/">Home</Link>
-      <Link to="/Catagories">Catagories</Link>
-    </div>
+    </ul>
   </nav>
 );
 export default Navbar;
