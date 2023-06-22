@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { React, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uid } from 'uuid';
