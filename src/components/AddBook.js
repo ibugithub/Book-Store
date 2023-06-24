@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { v4 as uid } from 'uuid';
+import { nanoid } from '@reduxjs/toolkit';
 import styles from '../css/addBook.module.css';
 import { addBook } from '../redux/books/BookListSlice';
 
@@ -23,10 +23,10 @@ const AddBook = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const newBook = {
-      itemId: uid(),
-      category: selectedCatagory,
+      item_id: nanoid(),
       title: bookTitle,
       author: Author,
+      category: selectedCatagory,
     };
     dispatch(addBook(newBook));
   };
