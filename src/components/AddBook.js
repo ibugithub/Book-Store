@@ -29,6 +29,9 @@ const AddBook = () => {
       category: selectedCatagory,
     };
     dispatch(addBook(newBook));
+    setBookTitle('');
+    setAuthor('');
+    setSelectedCatagory('');
   };
 
   return (
