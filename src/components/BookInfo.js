@@ -4,9 +4,9 @@ import styles from '../css/bookInfo.module.css';
 
 const BookInfo = ({ category, name, author }) => (
   <>
-    <div id={styles.category}>{category}</div>
-    <div id={styles.name}>{name}</div>
-    <div id={styles.author}>{author}</div>
+    <div className={styles.fontRoboto} id={styles.category}>{category}</div>
+    <div className={styles.fontRoboto} id={styles.name}>{name}</div>
+    <div className={styles.fontRoboto} id={styles.author}>{author}</div>
   </>
 );
 

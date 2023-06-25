@@ -15,12 +15,12 @@ const Chapter = ({ id }) => {
     <div id={styles.chapterContainer}>
       <div id={styles.divider} />
       <div id={styles.chapterInfoContainer}>
-        <div id={styles.currentChapter}>Current Chapter</div>
-        <div id={styles.chapter}>
+        <div className={styles.fontRoboto} id={styles.currentChapter}>Current Chapter</div>
+        <div className={styles.fontRoboto} id={styles.chapter}>
           Chapter
           {chapter}
         </div>
-        <button id={styles.updateButton} type="button" onClick={handleClick}> UPDATE PROGRESS </button>
+        <button className={styles.fontRoboto} id={styles.updateButton} type="button" onClick={handleClick}> UPDATE PROGRESS </button>
       </div>
 
     </div>

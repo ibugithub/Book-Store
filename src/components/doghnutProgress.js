@@ -11,13 +11,13 @@ const ProgressBar = ({ id }) => {
   };
   return (
     <div id={styles.progressContainer}>
-      <div id={styles.circle} style={setProgress}> </div>
+      <div className={styles.fontMontserrat} id={styles.circle} style={setProgress}> </div>
       <div id={styles.percentContainer}>
-        <span id={styles.percent}>
+        <span className={styles.fontMontserrat} id={styles.percent}>
           {percent}
           %
         </span>
-        <span id={styles.completed}>completed</span>
+        <span className={styles.fontMontserrat} id={styles.completed}>completed</span>
       </div>
     </div>
   );

@@ -19,7 +19,6 @@
 .nav a {
   border-right: 2px solid black;
   padding-right: 10px;
-  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   color: #121212;
   text-decoration: none;
@@ -34,7 +33,6 @@
   width: 15rem;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
-  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -42,4 +40,8 @@
   line-height: normal;
   letter-spacing: normal;
   color: #0290ff;
+}
+
+.fontMontserrat {
+  font-family: Montserrat, sans-serif;
 }
