@@ -1,6 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 import CommentRemoveEdit from './Comment_Remove_Edit';
+import ProgressBar from './doghnutProgress';
+import Chapter from './Chapters';
+import BookInfo from './BookInfo';
+import styles from '../css/book.module.css';
 
 const Book = ({
   id,
@@ -9,10 +14,12 @@ const Book = ({
   category,
 }) => (
   <>
-    <h2>{name}</h2>
-    <p>{author}</p>
-    <CommentRemoveEdit id={id} />
-    <div>{category}</div>
+    <div id={styles.bookInfoContainer}>
+      <BookInfo category={category} name={name} author={author} />
+      <CommentRemoveEdit id={id} />
+    </div>
+    <ProgressBar id={id} />
+    <Chapter id={id} />
   </>
 );
 

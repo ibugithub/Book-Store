@@ -35,6 +35,10 @@ const BookList = () => {
           </li>
         ))}
       </ul>
+      <div id={styles.sepContainer}>
+        <div id={styles.separator}> </div>
+      </div>
+
       <AddBook />
     </>
 

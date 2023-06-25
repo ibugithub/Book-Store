@@ -1,0 +1,43 @@
+#circle {
+  position: relative;
+  background: conic-gradient(#0390ff, var(--progress, 0deg), #ededed 0deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.625rem;
+  height: 5.62rem;
+}
+
+#circle::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  width: 4.25rem;
+  height: 4.25rem;
+}
+
+#progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.688rem;
+}
+
+#percentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#percent {
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  color: #121212;
+}
+
+#completed {
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  color: #121212;
+}

@@ -5,8 +5,12 @@ import styles from '../css/addBook.module.css';
 import { addBook } from '../redux/books/BookListSlice';
 
 const AddBook = () => {
+  const getRandomName = () => {
+    const names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank', 'Grace', 'Henry'];
+    const randomIndex = Math.floor(Math.random() * names.length);
+    return names[randomIndex];
+  };
   const [bookTitle, setBookTitle] = useState('');
-  const [Author, setAuthor] = useState('');
   const [selectedCatagory, setSelectedCatagory] = useState('');
   const dispatch = useDispatch();
 
@@ -16,37 +20,39 @@ const AddBook = () => {
   const handleCatagoryChange = (event) => {
     setSelectedCatagory(event.target.value);
   };
-  const handleAuthorChange = (event) => {
-    setAuthor(event.target.value);
-  };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const newBook = {
       item_id: nanoid(),
       title: bookTitle,
-      author: Author,
+      author: getRandomName(),
       category: selectedCatagory,
     };
     dispatch(addBook(newBook));
     setBookTitle('');
-    setAuthor('');
     setSelectedCatagory('');
   };
 
   return (
     <form className={styles['addBook-container']} onSubmit={handleSubmit}>
-      <h3>ADD NEW BOOK</h3>
-      <input type="text" placeholder="Book title" value={bookTitle} onChange={handleTitleChange} />
-      <input type="text" placeholder="Author" value={Author} onChange={handleAuthorChange} />
-      <select id="category" value={selectedCatagory} onChange={handleCatagoryChange}>
-        <option value="" disabled>Catagory</option>
-        <option value="Action">Action</option>
-        <option value="Adventure">Adventure</option>
-        <option value="Sci-Fi">Sci-Fi</option>
-        <option value="Mystery">Mystery</option>
-      </select>
-      <button type="submit">ADD BOOK</button>
+      <h3 className={styles.color88}>ADD NEW BOOK</h3>
+      <div id={styles.inputContainer}>
+        <input id={styles.title} className={styles.input} type="text" placeholder="Book title" value={bookTitle} onChange={handleTitleChange} />
+        <select
+          id={styles.category}
+          className={styles.input}
+          value={selectedCatagory}
+          onChange={handleCatagoryChange}
+        >
+          <option value="" disabled>Catagory</option>
+          <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Mystery">Mystery</option>
+        </select>
+        <button id={styles.button} className={styles.input} type="submit">ADD BOOK</button>
+      </div>
+
     </form>
   );
 };

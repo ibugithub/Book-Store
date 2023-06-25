@@ -1,0 +1,47 @@
+#divider {
+  height: 4.375rem;
+  width: 0.125rem;
+  background-color: #e8e8e8;
+}
+
+#chapterContainer {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  gap: 1rem;
+}
+
+#chapterInfoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#currentChapter {
+  opacity: 0.5;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+  margin-bottom: 0.438rem;
+}
+
+#chapter {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #121212;
+  margin-bottom: 1.438rem;
+}
+
+#updateButton {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  text-align: center;
+  background-color: #0290ff;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 5px;
+  color: rgb(219, 213, 213);
+  border: unset;
+  cursor: pointer;
+}

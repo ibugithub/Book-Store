@@ -1,8 +1,8 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { deleteBook } from '../redux/books/BookListSlice';
+import styles from '../css/Comment_Rem.module.css';
 
 const CommentRemoveEdit = ({ id }) => {
   const dispatch = useDispatch();
@@ -11,9 +11,9 @@ const CommentRemoveEdit = ({ id }) => {
   };
   return (
     <>
-      <button type="submit">Comment</button>
-      <button type="submit" onClick={() => handleClick(id)}>Remove</button>
-      <button type="submit">Edit</button>
+      <button className={styles.button} type="submit">Comment</button>
+      <button className={styles.button} type="submit" onClick={() => handleClick(id)}>Remove</button>
+      <button className={styles.button} type="submit">Edit</button>
     </>
   );
 };

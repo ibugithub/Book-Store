@@ -1,7 +1,21 @@
 .bookContainer {
   list-style: none;
+  padding: 2.313rem 3rem;
+  margin: unset;
 }
 
 .bookContainer li {
-  padding-bottom: 30px;
+  margin-bottom: 0.938rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 3.063rem 1.6rem;
+}
+
+#separator {
+  border: solid 1px #e8e8e8;
+}
+
+#sepContainer {
+  padding: 1px 3rem;
 }

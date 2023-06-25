@@ -1,8 +1,41 @@
 
 .addBook-container {
-  padding: 30px;
-  padding-bottom: 200px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  padding-bottom: 50px;
+}
+
+#inputContainer {
+  display: flex;
   justify-content: space-between;
+}
+
+.input {
+  height: 2.813rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+}
+
+#title {
+  width: 55%;
+  color: #6e6b6b;
+  padding-left: 15px;
+}
+
+#category {
+  width: 25%;
+  color: #c4c4c4;
+  padding-left: 15px;
+}
+
+#button {
+  width: 15%;
+  background-color: #0290ff;
+  color: white;
+  cursor: pointer;
+}
+
+.color88 {
+  color: #888;
 }
