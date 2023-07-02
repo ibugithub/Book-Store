@@ -33,11 +33,11 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
-    <li><a href="https://reactjs.org/">CSS</a></li>
-    <li><a href="https://reactjs.org/">JavaScript</a></li>
+    <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+    <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+    <li><a href="https://www.w3schools.com/js/js_intro.asp">JavaScript</a></li>
     <li><a href="https://reactjs.org/">React</a></li>
-     <li><a href="https://reactjs.org/">Redux</a></li>
+     <li><a href="https://redux.js.org/">Redux</a></li>
   </ul>
 </details>
 

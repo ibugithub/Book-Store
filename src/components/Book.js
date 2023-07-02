@@ -4,28 +4,22 @@ import CommentRemoveEdit from './Comment_Remove_Edit';
 
 const Book = ({
   id,
-  type,
   name,
   author,
-  progress,
-  chapter,
+  category,
 }) => (
   <>
-    <p>{type}</p>
     <h2>{name}</h2>
     <p>{author}</p>
     <CommentRemoveEdit id={id} />
-    <div>{progress}</div>
-    <p>{chapter}</p>
+    <div>{category}</div>
   </>
 );
 
 Book.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  progress: PropTypes.string.isRequired,
-  chapter: PropTypes.string.isRequired,
 };
 export default Book;
