@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #circle {
+      position: relative;
+      height: 120px;
+      width: 120px;
+      background: conic-gradient(#0390ff, var(--progress, 0deg), #ededed 0deg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      --progress: 80deg;
+    }
+
+    #circle::before {
+      content: '';
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="circle">
+  </div>
+  <button onclick="handleClick()">click</button>
+
+
+
+
+  <script>
+    let prog = 80;
+    const id= 7;
+    const value = 150;
+    let data = JSON.parse(localStorage.getItem('progress')) || {}
+    data[id] = value
+    console.log('the data is ', data)
+    const handleClick = (event) => {
+      const circle = document.querySelector('#circle')
+      circle.style.setProperty('--progress', `${prog}deg`);  
+      prog += 20;
+      data = JSON.stringify(data)
+      localStorage.setItem('progress',data)
+      let items = localStorage.getItem('progress')
+      items = JSON.parse(items)
+      console.log('the items are ', items, 'And the type is', typeof(items))
+      console.log('the specific id is ', items[4])
+    }
+    
+  </script>
+</body>
+
+</html>

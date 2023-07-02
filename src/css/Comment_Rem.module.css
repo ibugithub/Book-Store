@@ -1,0 +1,15 @@
+.button {
+  border: unset;
+  background: transparent;
+  border-right: 0.125rem solid #e8e8e8;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  padding-left: unset;
+  cursor: pointer;
+}
+
+.button:last-child {
+  border-right: none;
+}

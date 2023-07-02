@@ -43,7 +43,6 @@
 
 
 ### Key Features <a name="key-features"></a>
-- **To Display my projects**
 - **Book listing from bookstore Api**
 - **Book Adding**
 - **Book Deletion**
@@ -117,6 +116,7 @@ You can deploy this project using:
 
 ## 🤝 Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/ibugithub/Book-Store/issues).
 Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
