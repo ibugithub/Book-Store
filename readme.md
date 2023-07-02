@@ -37,6 +37,7 @@
     <li><a href="https://reactjs.org/">CSS</a></li>
     <li><a href="https://reactjs.org/">JavaScript</a></li>
     <li><a href="https://reactjs.org/">React</a></li>
+     <li><a href="https://reactjs.org/">Redux</a></li>
   </ul>
 </details>
 
@@ -103,7 +104,7 @@ You can deploy this project using:
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **[Ui Structure by react]**
+- [ ] **[Ui Structure by react and redux]**
 - [ ] **[Interactive website]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
