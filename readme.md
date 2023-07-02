@@ -44,6 +44,10 @@
 
 ### Key Features <a name="key-features"></a>
 - **To Display my projects**
+- **Book listing from bookstore Api**
+- **Book Adding**
+- **Book Deletion**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

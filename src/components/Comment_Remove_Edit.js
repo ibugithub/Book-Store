@@ -1,12 +1,13 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/BookListSlice';
+import { deleteBook } from '../redux/books/BookListSlice';
 
 const CommentRemoveEdit = ({ id }) => {
   const dispatch = useDispatch();
   const handleClick = (id) => {
-    dispatch(removeBook(id));
+    dispatch(deleteBook(id));
   };
   return (
     <>
